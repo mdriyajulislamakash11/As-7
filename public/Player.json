@@ -1,0 +1,110 @@
+[
+  {
+      "id": 1,
+      "name": "Shakib Al Hasan",
+      "rating": "Rating",
+      "battingHand": "Left-Hand-Bat",
+      "price": 500000,
+      "country": "Bangladesh",
+      "img": "https://i.ibb.co/HpBtbwR/sakib.webp"
+  },
+  {
+      "id": 2,
+      "name": "Tamim Iqbal",
+      "rating": "Rating",
+      "battingHand": "Left-Hand-Bat",
+      "price": 450000,
+      "country": "Bangladesh",
+      "img": "https://i.ibb.co/dWsZr16/tamim.jpg"
+  },
+  {
+      "id": 3,
+      "name": "Virat Kohli",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 750000,
+      "country": "India",
+      "img": "https://i.ibb.co/mBGQ1SX/virat-kohli.webp"
+  },
+  {
+      "id": 4,
+      "name": "David Warner",
+      "rating": "Rating",
+      "battingHand": "Left-Hand-Bat",
+      "price": 700000,
+      "country": "Australia",
+      "img": "https://i.ibb.co/whMsJ4f/david-warner.webp"
+  },
+  {
+      "id": 5,
+      "name": "Joe Root",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 600000,
+      "country": "England",
+      "img": "https://i.ibb.co/88DT9Bf/joe-root.jpg"
+  },
+  {
+      "id": 6,
+      "name": "Kane Williamson",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 650000,
+      "country": "New Zealand",
+      "img": "https://i.ibb.co/F50ByPb/kane-williamson.jpg"
+  },
+  {
+      "id": 7,
+      "name": "Babar Azam",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 720000,
+      "country": "Pakistan",
+      "img": "https://i.ibb.co/dmVwJFT/babar-azam.webp"
+  },
+  {
+      "id": 8,
+      "name": "Rohit Sharma",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 680000,
+      "country": "India",
+      "img": "https://i.ibb.co/JQCX5mF/rohit-sharma.jpg"
+  },
+  {
+      "id": 9,
+      "name": "Eoin Morgan",
+      "rating": "Rating",
+      "battingHand": "Left-Hand-Bat",
+      "price": 430000,
+      "country": "England",
+      "img": "https://i.ibb.co/rcKd2BF/eoin-morgan.jpg"
+  },
+  {
+      "id": 10,
+      "name": "Quinton de Kock",
+      "rating": "Rating",
+      "battingHand": "Left-Hand-Bat",
+      "price": 500000,
+      "country": "South Africa",
+      "img": "https://i.ibb.co/7XzDhkc/quinton-de-kock.webp"
+  },
+  {
+      "id": 11,
+      "name": "Steve Smith",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 710000,
+      "country": "Australia",
+      "img": "https://i.ibb.co/5M9rVh1/steve-smith.webp"
+  },
+  {
+      "id": 12,
+      "name": "Faf du Plessis",
+      "rating": "Rating",
+      "battingHand": "Right-Hand-Bat",
+      "price": 480000,
+      "country": "South Africa",
+      "img": "https://i.ibb.co/F50ByPb/faf-du-plessis.jpg"
+  }
+]

@@ -1,0 +1,7 @@
+.toggle{
+    display: flex;
+}
+
+.active{
+    background-color: #E7FE29;
+}
