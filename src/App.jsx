@@ -9,14 +9,6 @@ import { useState } from 'react'
 
 function App() {
 
-  const [count, setCount] = useState(0)
-
-  const loadMony = (count) => {
-      const newMony = count + 6000000;
-      console.log(newMony)
-      setCount(newMony)
-  }
-
 
   const [isActive, setActive] = useState({
     cart: true,
@@ -39,10 +31,10 @@ function App() {
     return (
       <>
         {/* Navber section */}
-        <Header count={count}></Header>
+        <Header></Header>
 
         {/* Banner section */}
-        <Banner count={count} loadMony={loadMony}></Banner>
+        <Banner></Banner>
 
         {/* main section */}
         <Main    
