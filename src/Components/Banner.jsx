@@ -1,9 +1,10 @@
-import banner from '../assets/banner-main.png'
+import React from 'react';
+import banner from '../assets/banner-main.png';
 
-const Banner = () => {
+const Banner = ({count, loadMony}) => {
 
-  
-
+    console.log(loadMony)
+    
     return (
         <div className="w-11/12 mx-auto mt-4">
             <div
@@ -18,8 +19,8 @@ const Banner = () => {
                     <p className="text-2xl font-medium text-white mb-6">Beyond Boundaries Beyond Limits</p>
                     <span className="border-2 border-[#E7FE29] rounded-xl">
                         <button
-                            
                             className="btn bg-[#E7FE29] m-1 font-bold text-5"
+                            onClick={() => loadMony(count)}
                         >
                             Claim Free Credit
                         </button>
@@ -30,6 +31,5 @@ const Banner = () => {
     );
 };
 
-export default Banner; 
-
-
+export default Banner;
+// 
