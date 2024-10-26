@@ -2,17 +2,28 @@ const Footer = () => {
     return (
         <div className="bg-black relative mt-96">
             {/* first part */}
-           <span className="p-2 ">
+            <span className="p-2 ">
                 <div
-                className="border-2 border-white absolute inset-x-0  bg-cover bg-no-repeat rounded-3xl h-80 w-11/12 mx-auto bg-[#cfd9ef] transform -translate-y-1/2"
-                style={{
-                    backgroundImage: "url('https://i.ibb.co/wS8y9KC/bg-shadow.png')",
-                }}
+                    className="border-2 border-white absolute inset-x-0  bg-cover bg-no-repeat rounded-3xl h-80 w-11/12 mx-auto bg-[#edebeb]  transform -translate-y-1/2 flex justify-center items-center text-center"
+                    style={{
+                        backgroundImage: "url('https://i.ibb.co/wS8y9KC/bg-shadow.png')",
+                    }}
                 >
+                    <div>
+                        <h1 className="text-3xl font-bold">Subscribe to our Newsletter</h1>
+                        <p className="text-lg font-medium text-[#131313B3] my-6">Get the latest updates and news right in your inbox!</p>
+                        <div className="join">
+                            <input
+                                type="text"
+                                placeholder="Enter your email"
+                                className="input input-bordered join-item"
+                            />
+                            <button className="btn btn-primary join-item">Subscribe</button>
+                        </div>
+                    </div>
 
-                    
                 </div>
-           </span>
+            </span>
 
             {/* second part */}
             <div className="py-11 w-11/12 mx-auto mt-44 relative z-10">
@@ -26,7 +37,7 @@ const Footer = () => {
                     ></div>
                 </div>
 
-                <div className="bg-black text-white flex justify-between px-3">
+                <div className="bg-black text-white flex justify-between px-3 flex-col">
                     <div>
                         <h2 className="text-lg font-semibold mb-3">About Us</h2>
                         <p className="text-gray-400">We are a passionate team <br />
