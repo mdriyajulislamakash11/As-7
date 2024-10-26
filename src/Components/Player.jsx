@@ -26,7 +26,7 @@ const Player = ({ card, onChoosePlayer }) => {
                     <div className="card-actions flex items-center mt-2">
                         <p className="text-lg font-bold">Price: {price}</p>
                         <button
-                            onClick={() => onChoosePlayer(card)} 
+                            onClick={() => onChoosePlayer(card)} // নির্বাচিত প্লেয়ার পাঠানো
                             className="btn btn-outline btn-warning text-lg font-bold">
                             Choose Player
                         </button>
