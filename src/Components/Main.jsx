@@ -14,7 +14,9 @@ const Main = ({ handleActiveBtn, isActive }) => {
     }, []);
 
     const handleChoosePlayer = (player) => {
-        if (selectedPlayers.length < 6) {
+        if (selectedPlayers.some(selected => selected.id === player.id)) {
+            alert(`${player.name} is already selected!`);
+        } else if (selectedPlayers.length < 6) {
             setSelectedPlayers(prev => [...prev, player]);
             alert(`${player.name} has been added to your selection!`); 
         } else {
