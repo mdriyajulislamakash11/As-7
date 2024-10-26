@@ -2,8 +2,10 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Player from './Player';
 import Details from './Details';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Main = ({count, handleActiveBtn, isActive }) => {
+const Main = ({ count, handleActiveBtn, isActive, balenceAdd, balenceReduce }) => {
     const [cards, setCards] = useState([]);
     const [selectedPlayers, setSelectedPlayers] = useState([]);
 
@@ -15,19 +17,24 @@ const Main = ({count, handleActiveBtn, isActive }) => {
 
     const handleChoosePlayer = (player) => {
         if (count === 0) {
-            alert("Your coin count is 0! Please add coins to choose a player.");
+            toast.error("Please add coins to choose a player.");
         } else if (selectedPlayers.some(selected => selected.id === player.id)) {
-            alert(`${player.name} is already selected!`);
+            toast.error(`${player.name} is already selected!`);
         } else if (selectedPlayers.length < 6) {
             setSelectedPlayers(prev => [...prev, player]);
-            alert(`${player.name} has been added to your selection!`);
+            balenceAdd(player)
+
+           toast.success(`${player.name} has been added successfully.`);
         } else {
-            alert("You can select up to 6 players only.");
+            toast.error("You can select up to 6 players only.");
         }
     };
-    
-    const removePlayer = (playerId) => {
-        setSelectedPlayers(prev => prev.filter(player => player.id !== playerId)); 
+
+    const removePlayer = (singlePlayer) => {
+        console.log(singlePlayer)
+        const playerId = singlePlayer.id
+        setSelectedPlayers(prev => prev.filter(player => player.id !== playerId));
+        balenceReduce(singlePlayer)
     };
 
     return (
@@ -63,13 +70,14 @@ const Main = ({count, handleActiveBtn, isActive }) => {
                         </div>
                     )
                     : (
-                        <Details 
-                            players={selectedPlayers} 
-                            removePlayer={removePlayer} 
-                            handleActiveBtn={handleActiveBtn} 
+                        <Details
+                            players={selectedPlayers}
+                            removePlayer={removePlayer}
+                            handleActiveBtn={handleActiveBtn}
                         />
                     )
             }
+            <ToastContainer position='top-center' autoClose={3000} />
         </div>
     );
 };

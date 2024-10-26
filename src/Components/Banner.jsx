@@ -32,4 +32,3 @@ const Banner = ({count, loadMony}) => {
 };
 
 export default Banner;
-// 
