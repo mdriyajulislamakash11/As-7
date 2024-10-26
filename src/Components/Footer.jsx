@@ -2,17 +2,20 @@ const Footer = () => {
     return (
         <div className="bg-black relative mt-96">
             {/* first part */}
-           <div className="">
+           <span className="p-2 ">
                 <div
-                className="border-2 border-white  absolute inset-x-0  bg-cover bg-no-repeat rounded-3xl h-80 w-11/12 mx-auto bg-[#252323] transform -translate-y-1/2"
+                className="border-2 border-white absolute inset-x-0  bg-cover bg-no-repeat rounded-3xl h-80 w-11/12 mx-auto bg-[#cfd9ef] transform -translate-y-1/2"
                 style={{
                     backgroundImage: "url('https://i.ibb.co/wS8y9KC/bg-shadow.png')",
                 }}
-                ></div>
-           </div>
+                >
+
+                    
+                </div>
+           </span>
 
             {/* second part */}
-            <div className="py-11 md:pt-52 w-11/12 mx-auto mt-44 relative z-10">
+            <div className="py-11 w-11/12 mx-auto mt-44 relative z-10">
 
                 <div className="flex justify-center mb-16">
                     <div
