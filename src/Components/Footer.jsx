@@ -16,7 +16,7 @@ const Footer = () => {
                             <input
                                 type="text"
                                 placeholder="Enter your email"
-                                className="input input-bordered join-item"
+                                className="input input-bordered join-item md:w-96"
                             />
                             <button className="btn btn-primary join-item">Subscribe</button>
                         </div>

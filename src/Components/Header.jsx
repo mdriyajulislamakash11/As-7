@@ -10,7 +10,7 @@ const Header = ({ points,  count }) => {
                 <img className='w-14' src={logo} alt="logo image" />
 
                 <div className='flex items-center text-lg font-bold'>
-                    <div className=''>
+                    <div className='hidden md:block'>
                         <ul className='md:flex list-none'>
                             <li className='mr-12'><a href="#">Home</a></li>
                             <li className='mr-12'><a href="#">Fixture</a></li>

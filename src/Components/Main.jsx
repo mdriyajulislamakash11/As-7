@@ -30,7 +30,7 @@ const Main = ({ handleActiveBtn, isActive }) => {
 
     return (
         <div className="w-11/12 mx-auto border my-20">
-            <div className="flex justify-between ">
+            <div className="flex justify-between  sticky top-20 bg-white py-4 z-10">
                 <h1 className='text-2xl font-extrabold'>{`${isActive.cart ? "Available Players" : `Selected Player(${selectedPlayers.length}/6)`}`}</h1>
                 <div className="">
                     <button
