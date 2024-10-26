@@ -37,8 +37,8 @@ const Footer = () => {
                     ></div>
                 </div>
 
-                <div className="bg-black text-white flex justify-between px-3 flex-col">
-                    <div>
+                <div className="bg-black text-white md:flex justify-between px-3 flex-col md:flex-row">
+                    <div className="mb-6">
                         <h2 className="text-lg font-semibold mb-3">About Us</h2>
                         <p className="text-gray-400">We are a passionate team <br />
                             dedicated to providing the best <br />
@@ -46,7 +46,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div>
+                    <div className="mb-6">
                         <h2 className="text-lg font-semibold mb-3">Quick Links</h2>
                         <ul>
                             <li className="mb-2 text-gray-400">Home</li>
