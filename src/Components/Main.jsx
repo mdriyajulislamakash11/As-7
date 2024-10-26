@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Player from './Player';
 import Details from './Details';
 
-const Main = ({ handleActiveBtn, isActive }) => {
+const Main = ({count, handleActiveBtn, isActive }) => {
     const [cards, setCards] = useState([]);
     const [selectedPlayers, setSelectedPlayers] = useState([]);
 
@@ -14,16 +14,18 @@ const Main = ({ handleActiveBtn, isActive }) => {
     }, []);
 
     const handleChoosePlayer = (player) => {
-        if (selectedPlayers.some(selected => selected.id === player.id)) {
+        if (count === 0) {
+            alert("Your coin count is 0! Please add coins to choose a player.");
+        } else if (selectedPlayers.some(selected => selected.id === player.id)) {
             alert(`${player.name} is already selected!`);
         } else if (selectedPlayers.length < 6) {
             setSelectedPlayers(prev => [...prev, player]);
-            alert(`${player.name} has been added to your selection!`); 
+            alert(`${player.name} has been added to your selection!`);
         } else {
-            alert("You can only select up to 6 players."); 
+            alert("You can select up to 6 players only.");
         }
     };
-
+    
     const removePlayer = (playerId) => {
         setSelectedPlayers(prev => prev.filter(player => player.id !== playerId)); 
     };

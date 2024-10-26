@@ -10,11 +10,12 @@ import { useState } from 'react'
 function App() {
 
   const [count, setCount] = useState(0)
+  
 
   const loadMony = (count) => {
-      const newMony = count + 6000000;
-      console.log(newMony)
-      setCount(newMony)
+    const newMony = count + 6000000;
+    console.log(newMony)
+    setCount(newMony)
   }
 
 
@@ -36,25 +37,27 @@ function App() {
     }
   }
 
-    return (
-      <>
-        {/* Navber section */}
-        <Header count={count}></Header>
+  return (
+    <>
+      {/* Navber section */}
+      <Header count={count}></Header>
 
-        {/* Banner section */}
-        <Banner count={count} loadMony={loadMony}></Banner>
+      {/* Banner section */}
+      <Banner count={count} loadMony={loadMony}></Banner>
 
-        {/* main section */}
-        <Main    
-        isActive={isActive} 
-        handleActiveBtn={handleActiveBtn}></Main>
-        
-        {/* footer section*/}
-        <Footer></Footer>
-      </>
-    )
-  }
+      {/* main section */}
+      <Main
+        isActive={isActive}
+        handleActiveBtn={handleActiveBtn}
+        count={count}
+        ></Main>
+
+      {/* footer section*/}
+      <Footer></Footer>
+    </>
+  )
+}
 
 
 
-  export default App
+export default App
