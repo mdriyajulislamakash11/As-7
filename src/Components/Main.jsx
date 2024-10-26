@@ -30,17 +30,17 @@ const Main = ({ handleActiveBtn, isActive }) => {
 
     return (
         <div className="w-11/12 mx-auto border my-20">
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
                 <h1 className='text-2xl font-extrabold'>{`${isActive.cart ? "Available Players" : `Selected Player(${selectedPlayers.length}/6)`}`}</h1>
-                <div>
+                <div className="">
                     <button
                         onClick={() => handleActiveBtn('cart')}
-                        className={`${isActive.cart ? "bg-[#E7FE29]" : ""} btn rounded mr-4 text-xl font-bold`}>
+                        className={`${isActive.cart ? "bg-[#E7FE29]" : ""} btn rounded  text-xl font-bold`}>
                         Available
                     </button>
                     <button
                         onClick={() => handleActiveBtn('about')}
-                        className={`${isActive.cart ? "" : "bg-[#E7FE29]"} btn rounded mr-4 text-xl font-bold`}>
+                        className={`${isActive.cart ? "" : "bg-[#E7FE29]"} btn rounded  text-xl font-bold`}>
                         Selected ({selectedPlayers.length})
                     </button>
                 </div>
