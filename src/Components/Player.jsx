@@ -27,7 +27,7 @@ const Player = ({ card, onChoosePlayer }) => {
                         <p className="text-lg font-bold">Price: {price}</p>
                         <button
                             onClick={() => onChoosePlayer(card)}
-                            className="btn btn-outline btn-warning text-lg font-bold">
+                            className="btn text-lg font-bold">
                             Choose Player
                         </button>
                     </div>

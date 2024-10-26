@@ -35,6 +35,7 @@ const Main = ({ count, handleActiveBtn, isActive, balenceAdd, balenceReduce }) =
         const playerId = singlePlayer.id
         setSelectedPlayers(prev => prev.filter(player => player.id !== playerId));
         balenceReduce(singlePlayer)
+        toast.warning(`${singlePlayer.name} removed`)
     };
 
     return (
@@ -77,7 +78,7 @@ const Main = ({ count, handleActiveBtn, isActive, balenceAdd, balenceReduce }) =
                         />
                     )
             }
-            <ToastContainer position='top-center' autoClose={3000} />
+<ToastContainer position='top-center' autoClose={3000}/>
         </div>
     );
 };
