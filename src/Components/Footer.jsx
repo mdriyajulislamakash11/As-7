@@ -18,7 +18,7 @@ const Footer = () => {
                                 placeholder="Enter your email"
                                 className="input input-bordered join-item md:w-96"
                             />
-                            <button className="btn btn-primary join-item">Subscribe</button>
+                            <button className="btn  join-item bg-gradient-to-r from-pink-400 to-yellow-200 text-black font-bold py-2 px-4 rounded">Subscribe</button>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
                                 placeholder="Enter your email"
                                 className="input input-bordered join-item"
                             />
-                            <button className="btn btn-primary join-item">Subscribe</button>
+                            <button  className="btn bg-gradient-to-r from-pink-400 to-yellow-200 text-black font-bold py-2 px-4 rounded">Subscribe</button>
                         </div>
                     </form>
                 </div>
