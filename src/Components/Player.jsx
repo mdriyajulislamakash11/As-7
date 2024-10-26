@@ -1,8 +1,11 @@
+import  '../App.css'
+
+
 const Player = ({ card, onChoosePlayer }) => {
     const { name, price, country, battingHand, rating, img } = card;
 
     return (
-        <div className="border-2 mt-4">
+        <div className="border-2 mt-4 sora">
             <div className="card bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
                     <img

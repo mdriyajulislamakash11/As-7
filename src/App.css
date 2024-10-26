@@ -1,3 +1,14 @@
-banner{
-    color: #000000c0;
+
+/* sora */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+.sora{
+    font-family: "Sora", serif;
+}
+
+.inter{
+    font-family: "Inter Tight", sans-serif;
 }

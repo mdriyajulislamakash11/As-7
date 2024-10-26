@@ -1,3 +1,4 @@
+import  '../App.css'
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Player from './Player';
@@ -39,7 +40,7 @@ const Main = ({ count, handleActiveBtn, isActive, balenceAdd, balenceReduce }) =
     };
 
     return (
-        <div className="w-11/12 mx-auto border my-20">
+        <div className="w-11/12 mx-auto border my-20 sora">
             <div className="flex justify-between  sticky top-20 bg-white py-4 z-10">
                 <h1 className='text-2xl font-extrabold'>{`${isActive.cart ? "Available Players" : `Selected Player(${selectedPlayers.length}/6)`}`}</h1>
                 <div className="">

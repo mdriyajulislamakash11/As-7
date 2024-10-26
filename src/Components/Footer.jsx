@@ -1,3 +1,6 @@
+import  '../App.css'
+
+
 const Footer = () => {
     return (
         <div className="bg-black relative mt-96">
@@ -10,8 +13,8 @@ const Footer = () => {
                     }}
                 >
                     <div>
-                        <h1 className="text-3xl font-bold">Subscribe to our Newsletter</h1>
-                        <p className="text-lg font-medium text-[#131313B3] my-6">Get the latest updates and news right in your inbox!</p>
+                        <h1 className="text-3xl font-bold sora">Subscribe to our Newsletter</h1>
+                        <p className="text-lg font-medium text-[#131313B3] my-6 inter">Get the latest updates and news right in your inbox!</p>
                         <div className="join">
                             <input
                                 type="text"
@@ -39,26 +42,26 @@ const Footer = () => {
 
                 <div className="bg-black text-white md:flex justify-between px-3 flex-col md:flex-row">
                     <div className="mb-6">
-                        <h2 className="text-lg font-semibold mb-3">About Us</h2>
-                        <p className="text-gray-400">We are a passionate team <br />
+                        <h2 className="text-lg font-semibold mb-3 sora">About Us</h2>
+                        <p className="text-gray-400 inter">We are a passionate team <br />
                             dedicated to providing the best <br />
                             services to our customers.
                         </p>
                     </div>
 
                     <div className="mb-6">
-                        <h2 className="text-lg font-semibold mb-3">Quick Links</h2>
+                        <h2 className="text-lg font-semibold mb-3 sora">Quick Links</h2>
                         <ul>
-                            <li className="mb-2 text-gray-400">Home</li>
-                            <li className="mb-2 text-gray-400">Services</li>
-                            <li className="mb-2 text-gray-400">About</li>
-                            <li className="mb-2 text-gray-400">Contact</li>
+                            <li className="mb-2 text-gray-400 inter">Home</li>
+                            <li className="mb-2 text-gray-400 inter">Services</li>
+                            <li className="mb-2 text-gray-400 inter">About</li>
+                            <li className="mb-2 text-gray-400 inter">Contact</li>
                         </ul>
                     </div>
 
                     <form>
-                        <h6 className="text-lg font-semibold mb-3">Subscribe</h6>
-                        <p className="text-gray-400 mb-2">Subscribe to our newsletter for the <br />
+                        <h6 className="text-lg font-semibold mb-3 sora">Subscribe</h6>
+                        <p className="text-gray-400 mb-2 inter">Subscribe to our newsletter for the <br />
                             latest updates.
                         </p>
                         <div className="join">
@@ -76,7 +79,7 @@ const Footer = () => {
             <hr className="bg-gray-600" />
 
             <span>
-                <p className="text-gray-400 text-xl text-center py-5">
+                <p className="text-gray-400 text-xl text-center py-5 inter">
                     @2024 Your Company All Rights Reserved.
                 </p>
             </span>

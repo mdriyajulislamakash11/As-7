@@ -1,5 +1,6 @@
-import React from 'react';
+
 import banner from '../assets/banner-main.png';
+import  '../App.css'
 
 const Banner = ({count, loadMony}) => {
 
@@ -15,11 +16,11 @@ const Banner = ({count, loadMony}) => {
             >
                 <div className="w-9/12 mx-auto flex flex-col justify-center items-center text-center h-full space-y-6 py-4">
                     <img src={banner} alt="banner" />
-                    <h1 className="md:text-5xl text-3xl font-bold text-white mb-4">Assemble Your Ultimate Dream 11 Cricket Team</h1>
-                    <p className="text-2xl font-medium text-white mb-6">Beyond Boundaries Beyond Limits</p>
+                    <h1 className="md:text-5xl text-3xl font-bold text-white mb-4 sora">Assemble Your Ultimate Dream 11 Cricket Team</h1>
+                    <p className="text-2xl font-medium text-white mb-6 inter">Beyond Boundaries Beyond Limits</p>
                     <span className="border-2 border-[#E7FE29] rounded-xl">
                         <button
-                            className="btn bg-[#E7FE29] m-1 font-bold text-5"
+                            className="btn bg-[#E7FE29] m-1 font-bold text-5 sora"
                             onClick={() => loadMony(count)}
                         >
                             Claim Free Credit

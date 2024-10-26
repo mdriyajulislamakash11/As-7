@@ -2,10 +2,11 @@
 import PropTypes from 'prop-types';
 import logo from '../assets/logo.png';
 import coin from '../assets/coin.png';
+import  '../App.css'
 
 const Header = ({  count }) => { 
     return (
-        <div className="sticky top-0 z-50 backdrop-blur-lg bg-white/50">
+        <div className="sticky top-0 z-50 backdrop-blur-lg bg-white/50 sora">
             <div className='flex flex-col  md:flex-row justify-between items-center w-11/12 mx-auto py-7 '>
                 <img className='w-14' src={logo} alt="logo image" />
 

@@ -1,3 +1,6 @@
+import  '../App.css'
+
+
 const Details = ({ players, removePlayer, handleActiveBtn }) => {
 
     console.log(players)
